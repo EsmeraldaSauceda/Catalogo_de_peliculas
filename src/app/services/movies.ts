@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environment';
 
 
 export interface Movie {
@@ -15,13 +16,14 @@ export interface Movie {
 
 @Injectable({ providedIn: 'root' })
 export class MoviesService {
-  private apiUrl = 'http://localhost:8000/movies';
 
   constructor(private http: HttpClient) {}
 
-  getMovies(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(this.apiUrl);
-  }
+  private apiUrl = environment.apiUrl;
+
+getMovies() {
+  return this.http.get(`${this.apiUrl}/movies`);
+}
 
   getMovie(id: number): Observable<Movie> {
     return this.http.get<Movie>(`${this.apiUrl}/${id}`);
