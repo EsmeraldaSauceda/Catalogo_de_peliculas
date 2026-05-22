@@ -1,13 +1,8 @@
 {
-"engines": {
-  "node": "22.x",
-  "pnpm": "11.x"
-},
-
   "name": "catalogo-de-peliculas",
   "version": "0.0.0",
   "scripts": {
-    "preinstall": "npx pnpm install",
+    "preinstall": "pnpm install",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -16,6 +11,10 @@
   },
   "private": true,
   "packageManager": "pnpm@11.1.3",
+  "engines": {
+    "node": "22.x",
+    "pnpm": "11.x"
+  },
   "dependencies": {
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
