@@ -1,7 +1,13 @@
 {
+"engines": {
+  "node": "18.x",
+  "pnpm": "8.x"
+},
+
   "name": "catalogo-de-peliculas",
   "version": "0.0.0",
   "scripts": {
+    "preinstall": "npx pnpm install",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
