@@ -2,7 +2,6 @@
   "name": "catalogo-de-peliculas",
   "version": "0.0.0",
   "scripts": {
-    "preinstall": "pnpm install",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
