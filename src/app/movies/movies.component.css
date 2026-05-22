@@ -1,0 +1,17 @@
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+.movie-card h3 {
+  margin: 0 0 0.5rem 0;
+}
+.movie-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.movie-card a:hover {
+  text-decoration: underline;
+}

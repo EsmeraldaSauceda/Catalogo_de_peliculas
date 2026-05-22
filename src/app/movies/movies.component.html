@@ -1,0 +1,55 @@
+<div class="container">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+
+    <h1>Lista de Películas</h1>
+
+    <a
+      routerLink="/add-movie"
+      class="btn btn-primary">
+
+      Agregar Película
+
+    </a>
+
+  </div>
+
+  <div
+    class="card shadow-sm mb-4"
+    *ngFor="let movie of movies">
+
+    <div class="card-body">
+
+      <div class="d-flex justify-content-between align-items-start">
+
+        <div>
+
+          <h3 class="card-title">
+
+            <a
+              [routerLink]="['/movie', movie.id]"
+              class="text-decoration-none">
+
+              {{ movie.title }}
+
+            </a>
+
+          </h3>
+
+          <p class="card-text">
+            {{ movie.synopsis }}
+          </p>
+
+          <p>
+            <strong>Año:</strong> {{ movie.year }}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
