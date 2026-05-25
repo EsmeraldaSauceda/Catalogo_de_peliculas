@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
-import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
 import { AddMovieComponent } from './components/add-movie/add-movie';
 import { EditMovieComponent } from './components/edit-movie/edit-movie';
@@ -14,8 +13,7 @@ export const routes: Routes = [
   },
 
   {
-    path: 'movies',
-    component: MoviesComponent
+    path: 'movies', loadComponent: () => import('./movies/movies.component') .then(m => m.MoviesComponent)
   },
 
   {
