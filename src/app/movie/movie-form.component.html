@@ -1,0 +1,35 @@
+<form (ngSubmit)="saveMovie()">
+
+  <input
+    type="text"
+    placeholder="Título"
+    [(ngModel)]="movie.title"
+    name="title"
+  >
+
+  <input
+    type="text"
+    placeholder="Género"
+    [(ngModel)]="movie.genre"
+    name="genre"
+  >
+
+  <input
+    type="number"
+    placeholder="Año"
+    [(ngModel)]="movie.year"
+    name="year"
+  >
+
+  <input
+    type="text"
+    placeholder="URL Portada"
+    [(ngModel)]="movie.cover"
+    name="image"
+  >
+
+  <button type="submit">
+    Guardar
+  </button>
+
+</form>

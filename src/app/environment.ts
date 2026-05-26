@@ -1,3 +1,3 @@
 export const environment = {
-  apiUrl: 'https://tu-backend.up.railway.app/api'
+  apiUrl: 'http://127.0.0.1:8000/api'
 };

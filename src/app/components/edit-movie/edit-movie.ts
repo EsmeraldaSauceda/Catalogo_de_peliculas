@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MovieService } from '../../services/movie';
+import { MovieService } from '../../services/movie.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

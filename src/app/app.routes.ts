@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
-import { MovieComponent } from './movie/movie.component';
+import { MovieComponent } from './movie/movie-form.component';
 import { AddMovieComponent } from './components/add-movie/add-movie';
 import { EditMovieComponent } from './components/edit-movie/edit-movie';
 
@@ -13,7 +13,7 @@ export const routes: Routes = [
   },
 
   {
-    path: 'movies', loadComponent: () => import('./movies/movies.component') .then(m => m.MoviesComponent)
+    path: 'movies', loadComponent: () => import('./movies/movie-list.component') .then(m => m.MovieListComponent)
   },
 
   {

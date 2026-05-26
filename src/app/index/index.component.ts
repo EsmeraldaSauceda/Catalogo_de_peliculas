@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
-import { MovieService } from '../services/movie';
+import { MovieService } from '../services/movie.service';
 
 @Component({
   selector: 'app-index',

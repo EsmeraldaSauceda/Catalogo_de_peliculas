@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MovieService } from '../../services/movie';
+import { MovieService } from '../../services/movie.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,7 +14,9 @@ export class AddMovieComponent {
     title: '',
     year: 0,
     synopsis: '',
-    cover: ''
+    cover: '',
+    director: '',
+    genre: '',
   };
 
   constructor(
